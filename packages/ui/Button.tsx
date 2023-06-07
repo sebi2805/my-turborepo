@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-
+import * as sebi from "dependent-package";
 export const Button = () => {
-  return <button onClick={() => alert("boop")}>Boop</button>;
+  return <button onClick={() => sebi.externalDep()}>Boop</button>;
 };
